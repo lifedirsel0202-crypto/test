@@ -59,10 +59,10 @@ try{
 	%>
 	
 <tr>
-<td><%=rs.getString("car_no") %></td>
-<td><%=rs.getString("car_model") %></td>
-<td><%=rs.getString("car_company") %></td>
-<td><%=date%></td>
+<td><%=rs.getString(1) %></td>
+<td><%=rs.getString(2) %></td>
+<td><%=rs.getString(3) %></td>
+<td><%=date %></td>
 </tr>
 <%
 	}
