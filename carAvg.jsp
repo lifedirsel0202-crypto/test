@@ -61,9 +61,9 @@ try{
 	%>
 	
 <tr>
-<td><%=rs.getString("td.dept_code") %></td>
-<td><%=rs.getString("td.dept_name") %></td>
-<td class= "D-List"><%=rs.getString("totalD") %></td>
+<td><%=rs.getString(1) %></td>
+<td><%=rs.getString(2) %></td>
+<td class= "D-List"><%=rs.getString(3) %></td>
 <td class= "D-List"><%=totalMoney %></td>
 </tr>
 <%
