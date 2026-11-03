@@ -47,14 +47,12 @@ try{
 	
 		String sql= "SELECT * FROM TBL_CAR";
 		rs= stmt.executeQuery(sql);
+			SimpleDateFormat sdf1= new SimpleDateFormat("yyyyMMdd");
+			SimpleDateFormat sdf2= new SimpleDateFormat("yyyy년MM월dd일");
 		
 		while(rs.next()){
 			
 			String carDate = rs.getString("car_date");
-			
-			SimpleDateFormat sdf1= new SimpleDateFormat("yyyyMMdd");
-			SimpleDateFormat sdf2= new SimpleDateFormat("yyyy년MM월dd일");
-			
 			String date = sdf2.format(sdf1.parse(carDate));
 	%>
 	
